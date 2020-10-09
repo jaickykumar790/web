@@ -31,9 +31,11 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
+     height: 100px;
 }
 #header a{
-    
+     text-decoration: none;
+    font-size: 30px;
 }
 .main-container {
     width: 100%;
@@ -107,6 +109,9 @@ body {
 
     .video {
         width: 100%;
+    }
+     #header a{
+        font-size: 20px;
     }
 }
 
