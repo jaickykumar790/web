@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,
+        Arial,
+        sans-serif
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --gray: #ccc;
+    --lightwhite: rgb(241, 243, 246);
+}
+
+body {
+    font-size: 14px;
+    min-width: 320px;
+}
+#container {
+    background: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header{
+    width:100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+#header a{
+    
+}
+.main-container {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top:100px;
+    justify-content: center;
+}
+.video_gallery {
+    width: 90%;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+.video-wrapper {
+    color: #000;
+    height: max-content;
+    overflow: hidden;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    -ms-flex: 33.3333%;
+    flex: 33.3333%;
+    max-width: 33.3333%;
+}
+
+.video {
+    padding-left: 6px;
+    cursor: pointer;
+}
+
+.video img {
+    width: 100%;
+}
+
+.video .details {
+    width: 100%;
+    height: 20%;
+    line-height: 24px;
+}
+
+.video .details .video-name {
+    font-weight: 600;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+}
+
+@media screen and (max-width: 800px) {
+    .video-wrapper {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-container {
+        padding: 0 5px;
+    }
+
+    .video-wrapper {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .video {
+        width: 100%;
+    }
+}
+
+#video-player-container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:0;
+    background: #fff;
+}
+#video-player{
+    width:max-content;
+}
+#video-player video{
+    width: 100%;
+}
+#hidevideoplayer{
+    position: absolute;
+    top:20px;
+    right:20px;
+    border: 0;
+    transform: scale(2);
+    background: none;
+    cursor: pointer;
+}
