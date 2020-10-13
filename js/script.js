@@ -4,10 +4,10 @@
 
  $(document).on('click', '.video-wrapper', function () {
     var video = $(this).attr('href');
-    $('body').append('<div div id = "video-player-container" > '+
+    $('body').append('<div  id = "video-player-container" > '+
             '<button id="hidevideoplayer">X</button>' +
             '<div id="video-player">' +
-            '<video controls="" src="' + video + '"></video>' +
+            '<video autoplay="" controls="" src="' + video + '"></video>' +
             '</div>' +
             '</div>'
             );
