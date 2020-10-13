@@ -7,7 +7,7 @@
     $('body').append('<div div id = "video-player-container" > '+
             '<button id="hidevideoplayer">X</button>' +
             '<div id="video-player">' +
-            '<video autoplay="" controls="" src="' + video + '"></video>' +
+            '<video controls="" src="' + video + '"></video>' +
             '</div>' +
             '</div>'
             );
